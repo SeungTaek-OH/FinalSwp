@@ -9,8 +9,8 @@ html = b"""
 	<br>
 	</form>
 	<p>
-	plus : %(plus)s</br>
-	multi : %(multi)s</br>
+	plus : %(plus)s<br>
+	multi : %(multi)s<br>
 	</p>
 </body>
 </html>
