@@ -13,8 +13,8 @@ def application(environ, start_response):
 		plus = a + b
 		multi = a * b
 	else:
-		plus = "error";
-		multi = "error";
+		plus = "error"
+		multi = "error"
 
 	response_body = html % {'plus':plus,'multi',multi}
 	start_response('200 OK', [
