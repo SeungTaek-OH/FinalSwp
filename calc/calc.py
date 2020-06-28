@@ -17,7 +17,7 @@ def application(environ, start_response):
 		plus = "error"
 		multi = "error"
 
-	response_body = html % {'plus':plus,'multi',multi}
+	response_body = html % {'plus':plus,'multi':multi}
 	start_response('200 OK', [
 		('Content-Type', 'text/html'),
 		('Content-Length', str(len(response_body)))
