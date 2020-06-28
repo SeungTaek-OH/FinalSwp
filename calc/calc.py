@@ -7,7 +7,10 @@ def application(environ, start_response):
 	
 	a = ec.get('a',[''])[0]
 	b = ec.get('a',[''])[0]
-
+	
+	plus = 0
+	multi = 0	
+	
 	try:
 		a, b = int(a), int(b)
 		plus = a + b
