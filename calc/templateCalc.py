@@ -5,6 +5,7 @@ html = b"""
 	<p>
 	a = <input type="number" name="a">
 	b = <input type="number" name="b">
+	<input type="submit" value="enter">
 	</p>
 	<br>
 	</form>
