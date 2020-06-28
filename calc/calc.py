@@ -8,11 +8,12 @@ def application(environ, start_response):
 	a = ec.get('a',[''])[0]
 	b = ec.get('a',[''])[0]
 
-	if '' not in[a,b]:
+	try:
 		a, b = int(a), int(b)
 		plus = a + b
 		multi = a * b
-	else:
+
+	except ValueError:
 		plus = "error"
 		multi = "error"
 
